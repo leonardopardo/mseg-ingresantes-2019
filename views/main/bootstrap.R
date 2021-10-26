@@ -1,31 +1,8 @@
-# data <- read.csv2(
-#   file = "data/datos.csv",
-#   sep = ";",
-#   stringsAsFactors = T
-# )
-
-data.query <- "select 
-  NacidoProvincia,
-  Sexo,	
-  EstadoCivil,	
-  CantHijos,	
-  DomicilioPartido,	
-  DomicilioProvincia,
-  ComisariaJurisdiccional,
-  Departamental,
-  PoseeLicenciaConducir,
-  TituloSecundario,
-  TipoOtroEstudio,
-  ConoceComputacion,
-  ConoceIngles,
-  ConoceOtros,
-  Edad
-from 
-  vPostulanteDA 
-where 
-  year(InscripcionFecha) = 2019"
-
-data <- sqlServerQuery(cnn.sql, data.query)
+data <- read.csv2(
+  file = "data/datos.csv",
+  sep = ";",
+  stringsAsFactors = T
+)
 
 count_entering <- data %>% 
   count()
