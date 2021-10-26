@@ -1,0 +1,29 @@
+---
+title: "report"
+output: pdf_document
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+
+Sys.Date()
+# require(dplyr)
+# require(echarts4r)
+# data <- read.csv(
+#     "../data/datos.csv",
+#     header = TRUE,
+#     stringsAsFactors = TRUE,
+#     sep = ';'
+# )
+# source("../views/main/bootstrap.R")
+# count_by_gender %>%
+#     dplyr::mutate(Sexo = c("mujeres", "hombres")) %>%
+#     e_charts(Sexo) %>%
+#     e_bar(n, name = "Genero") %>%
+#     e_title("Distribucion por Genero") %>%
+#     e_labels(position = "insideRight") %>%
+#     e_flip_coords() %>%
+#     e_legend(show = FALSE) %>%
+#     e_grid(containLabel = TRUE) %>%
+#     e_group("gender") %>%
+#     e_connect_group("gender")
+```
